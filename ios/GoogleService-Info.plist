@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>991915358860-18quvd8cu6ih70ibr4lqcn82me67hlh1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.991915358860-18quvd8cu6ih70ibr4lqcn82me67hlh1</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>991915358860-bkc923kdf8m9e46899j7kcs9jmpc5gvi.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAYisO1W102Yfa3JA_U0LHT70QEGLC1DXQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>991915358860</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.PersonalTrainer</string>
+	<key>PROJECT_ID</key>
+	<string>personaltrainer-fb5fc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>personaltrainer-fb5fc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:991915358860:ios:cd68e7384c35b2653bd9a9</string>
+</dict>
+</plist>
