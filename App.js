@@ -1,4 +1,4 @@
-import {View, Text, TouchableOpacity} from 'react-native';
+import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {
   GoogleSignin,
@@ -34,7 +34,7 @@ const signIn = async () => {
 
 const App = () => {
   return (
-    <View>
+    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <TouchableOpacity onPress={signIn}>
         <Text>Google Sign ın</Text>
       </TouchableOpacity>
