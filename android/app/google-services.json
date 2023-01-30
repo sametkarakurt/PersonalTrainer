@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "991915358860",
+    "project_id": "personaltrainer-fb5fc",
+    "storage_bucket": "personaltrainer-fb5fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991915358860:android:724e108431c12c933bd9a9",
+        "android_client_info": {
+          "package_name": "com.personaltrainer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991915358860-bkc923kdf8m9e46899j7kcs9jmpc5gvi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.personaltrainer",
+            "certificate_hash": "a66df5f31834ec734973306428f300a01862d584"
+          }
+        },
+        {
+          "client_id": "991915358860-umq4f0i5f9qkjdhbh5n8k7cl78f57k84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8mTA5eFpYeC7VheL48eLpOZvYuVjO1Ec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991915358860-umq4f0i5f9qkjdhbh5n8k7cl78f57k84.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
