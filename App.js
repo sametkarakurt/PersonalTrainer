@@ -4,7 +4,7 @@ import {
   GoogleSignin,
   statusCodes,
 } from '@react-native-google-signin/google-signin';
-
+import {ButtonIcon} from './src/components';
 GoogleSignin.configure({
   webClientId:
     '991915358860-umq4f0i5f9qkjdhbh5n8k7cl78f57k84.apps.googleusercontent.com', // client ID of type WEB for your server (needed to verify user ID and offline access)
