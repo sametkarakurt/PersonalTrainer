@@ -169,6 +169,12 @@ android {
         }
     }
 
+
+    packagingOptions {
+        resources.excludes.add("META-INF/*")
+    }
+
+
     if (isNewArchitectureEnabled()) {
         // We configure the NDK build only if you decide to opt-in for the New Architecture.
         externalNativeBuild {
@@ -220,7 +226,7 @@ android {
     }
     signingConfigs {
         debug {
-            storeFile file('/Users/sametkarakurt/Desktop/myKeystore.jks')
+            storeFile file('myKeystore.jks')
             storePassword 'Smt1728+'
             keyAlias 'zephyrAlias'
             keyPassword 'Smt1728+'
@@ -263,7 +269,7 @@ dependencies {
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
-
+    implementation 'jakarta.xml.bind:jakarta.xml.bind-api:2.3.3'
     implementation files('libs/iyzipay-java-2.0.115.jar')
     implementation files('libs/commons-lang3-3.4.jar')
     implementation files('libs/gson-2.5.jar')
@@ -307,6 +313,8 @@ if (isNewArchitectureEnabled()) {
                     .because("On New Architecture we're building Hermes from source")
         }
     }
+
+
 }
 
 // Run this once to be able to run the application with BUCK
@@ -324,4 +332,12 @@ def isNewArchitectureEnabled() {
     // - Invoke gradle with `-newArchEnabled=true`
     // - Set an environment variable `ORG_GRADLE_PROJECT_newArchEnabled=true`
     return project.hasProperty("newArchEnabled") && project.newArchEnabled == "true"
+}
+
+task wrapper(type: Wrapper){
+    gradleVersion = '7.2'
+}
+
+task prepareKotlinBuildScriptModel {
+
 }
