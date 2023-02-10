@@ -37,7 +37,18 @@ const App = () => {
       </TouchableOpacity>
 
       <TouchableOpacity
-        onPress={() => IyzipayModule.makeSales((response) => console.log(response))}
+        onPress={() =>
+          IyzipayModule.makeSales((res) => {
+            console.log('Iyzico Ödeme Sonucu::::::: ')
+            console.log(res)
+            const jsonRes = JSON.parse(res)
+            if (jsonRes.status == 'success') {
+              alert('Ödeme Başarılı')
+            } else {
+              alert('Ödeme Başarısız')
+            }
+          })
+        }
       >
         <Text>Native Module</Text>
       </TouchableOpacity>

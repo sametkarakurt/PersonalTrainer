@@ -1,5 +1,6 @@
 package com.personaltrainer;
 
+import com.google.gson.Gson;
 import com.iyzipay.Options;
 import com.iyzipay.model.Address;
 import com.iyzipay.model.BasketItem;
@@ -38,13 +39,14 @@ public class IyzipayModule extends ReactContextBaseJavaModule {
     }
 
 
+
     @ReactMethod
     public void makeSales(Callback callBack) {
-
+        Gson gson = new Gson();
         Options options = new Options();
-        options.setApiKey(System.getProperty("apiKey"));
-        options.setSecretKey(System.getProperty("secretKey"));
-        options.setBaseUrl(System.getProperty("baseUrl"));
+        options.setApiKey("sandbox-FNsiVztE0Lii4c5Kwe5XzQrN7qu1Bt5S");
+        options.setSecretKey("sandbox-oM239dBnQBA5XvjJYORiwCEvHh4Zua1v");
+        options.setBaseUrl("https://sandbox-api.iyzipay.com");
 
         CreatePaymentRequest request = new CreatePaymentRequest();
         request.setLocale(Locale.TR.getValue());
@@ -128,8 +130,7 @@ public class IyzipayModule extends ReactContextBaseJavaModule {
         request.setBasketItems(basketItems);
 
         Payment payment = Payment.create(request, options);
-
-        callBack.invoke(payment);
+        callBack.invoke(gson.toJson(payment));
     }
 
 
