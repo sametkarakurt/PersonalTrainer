@@ -248,6 +248,14 @@ PODS:
   - React-jsinspector (0.70.0)
   - React-logger (0.70.0):
     - glog
+  - react-native-safe-area-context (4.5.0):
+    - RCT-Folly
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - ReactCommon/turbomodule/core
+  - react-native-webview (11.26.1):
+    - React-Core
   - React-perflogger (0.70.0)
   - React-RCTActionSheet (0.70.0):
     - React-Core/RCTActionSheetHeaders (= 0.70.0)
@@ -317,8 +325,15 @@ PODS:
   - RNFBApp (16.7.0):
     - Firebase/CoreOnly (= 10.3.0)
     - React-Core
+  - RNFS (2.20.0):
+    - React-Core
   - RNGoogleSignin (9.0.2):
     - GoogleSignIn (~> 6.2)
+    - React-Core
+  - RNScreens (3.19.0):
+    - React-Core
+    - React-RCTImage
+  - RNVectorIcons (9.2.0):
     - React-Core
   - Yoga (1.14.0)
 
@@ -344,6 +359,8 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
+  - react-native-webview (from `../node_modules/react-native-webview`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -357,7 +374,10 @@ DEPENDENCIES:
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
+  - RNFS (from `../node_modules/react-native-fs`)
   - "RNGoogleSignin (from `../node_modules/@react-native-google-signin/google-signin`)"
+  - RNScreens (from `../node_modules/react-native-screens`)
+  - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -412,6 +432,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-safe-area-context:
+    :path: "../node_modules/react-native-safe-area-context"
+  react-native-webview:
+    :path: "../node_modules/react-native-webview"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -438,8 +462,14 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   RNFBApp:
     :path: "../node_modules/@react-native-firebase/app"
+  RNFS:
+    :path: "../node_modules/react-native-fs"
   RNGoogleSignin:
     :path: "../node_modules/@react-native-google-signin/google-signin"
+  RNScreens:
+    :path: "../node_modules/react-native-screens"
+  RNVectorIcons:
+    :path: "../node_modules/react-native-vector-icons"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -473,6 +503,8 @@ SPEC CHECKSUMS:
   React-jsiexecutor: be588b7abbea4f1d03840bc675d68d99380e5bf3
   React-jsinspector: bd839d6c2c28e49fe1373f055735d2abecbd6cf3
   React-logger: 48d82b9be8e44d86668de4453fdb60255516388b
+  react-native-safe-area-context: 39c2d8be3328df5d437ac1700f4f3a4f75716acc
+  react-native-webview: 9f111dfbcfc826084d6c507f569e5e03342ee1c1
   React-perflogger: 77947e49d84e31eb87d454d4ef327542dcfeaebc
   React-RCTActionSheet: 9f5fd6c1666c1a834ab7f45a452ed08b1de44eb8
   React-RCTAnimation: 6fd3db6ca387c8432fd6a26428e940a081bcb476
@@ -486,7 +518,10 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: 80c195ffcafb190f531fdc849dc2d19cb4bb2b34
   ReactCommon: de55f940495d7bf87b5d7bf55b5b15cdd50d7d7b
   RNFBApp: 1ee535dcb7773ca612d3a2e53a1f78f8f2fb6abf
+  RNFS: 4ac0f0ea233904cb798630b3c077808c06931688
   RNGoogleSignin: 22e468a9474dbcb8618d8847205ad4f0b2575d13
+  RNScreens: ea4cd3a853063cda19a4e3c28d2e52180c80f4eb
+  RNVectorIcons: fcc2f6cb32f5735b586e66d14103a74ce6ad61f8
   Yoga: 82c9e8f652789f67d98bed5aef9d6653f71b04a9
 
 PODFILE CHECKSUM: 05e8dd555ebf616ef79f02cc37395bb7b9e78a00

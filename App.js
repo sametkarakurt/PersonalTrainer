@@ -3,6 +3,8 @@ import { StyleSheet, View, Text, TouchableOpacity, NativeModules } from 'react-n
 import { GoogleSignin, statusCodes } from '@react-native-google-signin/google-signin'
 import React from 'react'
 
+import { iyzipayPayment } from './src/networks/IyzipayAPI'
+
 const App = () => {
   GoogleSignin.configure({
     webClientId: '991915358860-umq4f0i5f9qkjdhbh5n8k7cl78f57k84.apps.googleusercontent.com' // client ID of type WEB for your server (needed to verify user ID and offline access)
@@ -31,26 +33,13 @@ const App = () => {
     }
   }
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <TouchableOpacity onPress={signIn}>
-        <Text>Google Sign ın</Text>
-      </TouchableOpacity>
-
+    <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}>
       <TouchableOpacity
-        onPress={() =>
-          IyzipayModule.makeSales((res) => {
-            console.log('Iyzico Ödeme Sonucu::::::: ')
-            console.log(res)
-            const jsonRes = JSON.parse(res)
-            if (jsonRes.status == 'success') {
-              alert('Ödeme Başarılı')
-            } else {
-              alert('Ödeme Başarısız')
-            }
-          })
-        }
+        onPress={() => {
+          iyzipayPayment()
+        }}
       >
-        <Text>Native Module</Text>
+        <Text>Test</Text>
       </TouchableOpacity>
     </View>
   )
